@@ -1,3 +1,4 @@
+package EJERCICIOSJAVA;
 import java.util.Scanner;
 
 public class NumeroAleatorio {
