@@ -11,7 +11,7 @@ public class USOvehiculos {              //Esta será considerada como la clase 
 
     public static void main (String [] args){
 
-Vehiculos miCoche=new Vehiculos(); //Creamos un objeto de la clase Vehiculos. //acabamos de INSTANCIAR,HEMOS INSTANCIDADO la clase Vehiculos.
+Vehiculos miCoche=new Vehiculos(4); //Creamos un objeto de la clase Vehiculos. //acabamos de INSTANCIAR,HEMOS INSTANCIDADO la clase Vehiculos.
                             //miCoche es el nombre del objeto. Podría ser cualquier otro nombre.
                             //new es una palabra reservada que se usa para crear objetos.
                             //Vehiculos() es el constructor de la clase Vehiculos. Es decir, el método que tiene el mismo nombre que la clase.
@@ -25,7 +25,12 @@ Vehiculos miCoche=new Vehiculos(); //Creamos un objeto de la clase Vehiculos. //
       //¿Cómo accedemos al método perteneciente a un objeto? 
       //Si quiero ver qué color tiene el coche, tengo que usar el método getter.
 
-       System.out.println(miCoche.getColor()); //No puedo acceder directamente a la propiedad color, ya que está encapsulada.
+      miCoche.setColor("verde"); //Usamos el método setter para cambiar el color del coche.
+                            //Dentro de los paréntesis del método setter, le pasamos el valor que queremos que tenga la propiedad color.
+                            //En este caso, le pasamos el valor "verde".
+                            //El método setter no devuelve nada, simplemente cambia el valor de la propiedad color.
+      
+      System.out.println(miCoche.getColor()); //No puedo acceder directamente a la propiedad color, ya que está encapsulada.
                             //Por lo tanto, tengo que usar el método getter para acceder al color.
                             //El método getter devuelve el valor de la propiedad color.
                             //Pero si quiero ver el valor del color, tengo que imprimirlo por pantalla.
@@ -33,7 +38,29 @@ Vehiculos miCoche=new Vehiculos(); //Creamos un objeto de la clase Vehiculos. //
 
                             //Si le damos al system.out.prinln cuando en el interior está el getColor, vemos que el resultado es "sin color". Porque ese es el estado inicial que le hemos dado al coche en el constructor de la clase Vehiculos.
                             //Si quiero cambiar el color del coche, tengo que usar el método setter. Esto es: public static void main .... Vehiculos miCoche=new.Vehiculos(); miCoche.setColor(); sysout.println(miCoche.getColor());
+   
+   
+Vehiculos miCoche2=new Vehiculos(4); //Creamos otra instancia de la clase Vehiculos.
+   
+miCoche2.setColor("rojo"); //Cambiamos el color del segundo coche a rojo.
+   
+               System.out.print(miCoche2.getColor()); //Imprimimos el color del segundo coche.  }
+
+
+Vehiculos moto1=new Vehiculos(2); //Creamos una nueva instancia de la clase Vehiculos. moto1.
+   
+
+   
+System.out.println(miCoche.getDatovehiculo()); //Imprimimos los datos del primer coche.
+System.out.println(moto1.getDatovehiculo()); //Imprimimos los datos de la moto.
+   
+   
     }
+
+
+
+
+
 
 
 }
@@ -46,3 +73,12 @@ Vehiculos miCoche=new Vehiculos(); //Creamos un objeto de la clase Vehiculos. //
 //Para poder modificar el color, hemos creado un método setter que modifica la propiedad color.
 //Para poder acceder al color, hemos creado un método getter que devuelve el valor de la propiedad color.
 //Ahora, para crear objetos de esta clase, tenemos que ir a la clase principal que es la que tiene el método main. En este caso, la clase USOvehiculos.
+
+
+
+//Ahora vamos a ver el PASO DE PARÁMETROS. ESTO ES, CÓMO HACER QUE UN MÉTODO RECIBA UN VALOR DESDE FUERA DEL MÉTODO.
+//Hemos creado una nueva instancia de la clase Vehiculos. miCoche2.
+//Hemos cambiado el color del segundo coche a rojo.
+//Hemos imprimido el color del segundo coche.
+//Hemos visto que cada objeto tiene su propio estado. El primer coche es verde y el segundo coche es rojo.
+//Cada objeto tiene su propio estado porque cada objeto es una instancia diferente.
