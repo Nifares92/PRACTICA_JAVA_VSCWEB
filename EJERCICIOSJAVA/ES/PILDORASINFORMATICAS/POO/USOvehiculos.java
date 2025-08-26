@@ -9,7 +9,7 @@ public class USOvehiculos {              //Esta será considerada como la clase 
                             
           
 
-    public static void main (String [] args){
+public static void main (String [] args){
 
 Vehiculos miCoche=new Vehiculos(4); //Creamos un objeto de la clase Vehiculos. //acabamos de INSTANCIAR,HEMOS INSTANCIDADO la clase Vehiculos.
                             //miCoche es el nombre del objeto. Podría ser cualquier otro nombre.
