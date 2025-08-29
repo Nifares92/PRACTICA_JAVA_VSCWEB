@@ -8,25 +8,21 @@ public static void main (String [] args){
 
     Libro minovela=new Libro ("La casa de las cuatro rosas", "Serafín Piñeiro", 385, false);
 
-//cuando creamos el objeto, se ejecuta el constructor.
+    Gestordelectura lector = new Gestordelectura ("Serafin Piñeiro");
+
+
+    //cuando creamos el objeto, se ejecuta el constructor.
 //luego llamamos a los métodos.
 //los métodos van separados por puntos.
 
 minovela.mostrarInformacion();
 
-minovela.marcarcomoleído();
+lector.Iniciarlectura(minovela);
 
 minovela.mostrarInformacion();
-
-//creamos otro objeto de la clase Libro.
     
-    Libro segundolibro=new Libro ("La novia gitana", "Carmen Mola", 600, true);
+lector.finalizarLectura(minovela);
 
-segundolibro.mostrarInformacion();
-
-segundolibro.esVoluminoso();
-
-minovela.cambioautor();
-    }
+}
 
 }

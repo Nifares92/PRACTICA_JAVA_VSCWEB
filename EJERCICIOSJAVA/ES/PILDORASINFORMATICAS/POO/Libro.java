@@ -36,7 +36,7 @@ if (leído){
 
     public void marcarcomoleído(){
 
-        leído=true;
+        leído=false;
 
         System.out.println("El libro ha sido marcado como leído");
 

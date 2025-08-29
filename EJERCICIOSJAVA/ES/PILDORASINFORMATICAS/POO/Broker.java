@@ -4,14 +4,14 @@ public class Broker {
 
     //ATRIBUTO.
 
-    private String nombrebroker;
+    private String nombrebroker; 
 
     //CONSTRUCTOR.
 
     public Broker (String nombrebroker){
 
         this.nombrebroker=nombrebroker;
-
+        
 
     }
 
