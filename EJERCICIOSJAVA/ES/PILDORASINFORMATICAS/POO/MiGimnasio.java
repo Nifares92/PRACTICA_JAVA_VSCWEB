@@ -12,7 +12,7 @@ public class MiGimnasio {
         Rutina diaDeBrazos = new Rutina("Día de brazos");
 
         // 3. Muestra el estado inicial del músculo.
-        System.out.println("--- ESTADO INICIAL ---");
+        System.out.println("--- ESTADO INICIALe ---");
         System.out.println("Fuerza inicial del " + biceps.getnombre() + ": " + 10.0);
 
         // 4. Utiliza el objeto Rutina para ejecutar un ejercicio.
