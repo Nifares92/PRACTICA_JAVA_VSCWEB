@@ -13,10 +13,7 @@ public EntidadMagica (String nombre, int energiaVital){
 this.nombre=nombre;
 this.energiaVital=energiaVital;
 
-System.out.println("Una nueva entidad mágica ha sido creada, cuyo nombre es " + this.nombre + "." + "\n Su energia vital es " + this.energiaVital);
-
 }               
-
 
 //MÉTODOS PÚBLICOS. EL ACCESO CONTROLADO.
 
@@ -37,35 +34,36 @@ System.out.println("Una nueva entidad mágica ha sido creada, cuyo nombre es " +
         // Esto permite proteger la integridad de los datos y controlar cómo se accede y modifica la información.
       
 // SETTER para la energía (Permite MODIFICAR la energía con reglas).
+//En este supuesto, lo que hace es cambiar la energia de una especie por alguna razón.Pero este cambio la vamos a efectuar nosotros directamente en la clase principal.
+
+
    public void setCambiarenergia(int nuevaenergia){
     if(nuevaenergia>0){
         this.energiaVital=nuevaenergia;   //Si en la clase main me dice: nuevochaman.setCambiarenergia(20), dice que la nueva energia es igual a 20 y la introduce en la propiedad energiaVital.
 
     }else {
         
-        System.out.println("No podemos hacer nada con tu energía, lo siento");}// Si el valor es inválido, la energía se agota a 0.
-    
+        this.energiaVital=0;
     
     }
-   
-public void getNuevodano(int nuevodano){
+   }
+    //En este caso, he creado un método que hace lo siguiente: cuando en la clase principal una especie ataca a la otra, va a utilizar una intensidad (ataque) que va a afectar dorectamente a la energiaVital del oponente.
+    //Asi, lo que hace es que la energiaVital que tenía hasta ese momento se ve afectada y se reduce en la intensidad del ataque. 
 
- int nuevaenergia=this.energiaVital - nuevodano;
+   public void setataquerecibido (int ataque) {
 
-if(nuevaenergia>10){
-
-System.out.println("Perfecto, puedes seguir luchando");
-
-}else {
-
-System.out.println("Lo siento, tu energia es muy baja, tienes que rendirte ahora");
-
-}
-
-}
-
+    this.energiaVital=energiaVital - ataque;
 
 
 }
+
+public void setaumentoenerrgia (int aumento){
+    this.energiaVital=energiaVital + aumento;
+}
+
+
+}
+
+
 
 
