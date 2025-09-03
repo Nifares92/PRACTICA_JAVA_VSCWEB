@@ -38,13 +38,31 @@ System.out.println("Una nueva entidad mágica ha sido creada, cuyo nombre es " +
       
 // SETTER para la energía (Permite MODIFICAR la energía con reglas).
    public void setCambiarenergia(int nuevaenergia){
-    if(nuevaenergia>=0){
+    if(nuevaenergia>0){
         this.energiaVital=nuevaenergia;   //Si en la clase main me dice: nuevochaman.setCambiarenergia(20), dice que la nueva energia es igual a 20 y la introduce en la propiedad energiaVital.
 
     }else {
-          this.energiaVital = 0; // Si el valor es inválido, la energía se agota a 0.
+        
+        System.out.println("No podemos hacer nada con tu energía, lo siento");}// Si el valor es inválido, la energía se agota a 0.
+    
+    
     }
-   }
+   
+public void getNuevodano(int nuevodano){
+
+ int nuevaenergia=this.energiaVital - nuevodano;
+
+if(nuevaenergia>10){
+
+System.out.println("Perfecto, puedes seguir luchando");
+
+}else {
+
+System.out.println("Lo siento, tu energia es muy baja, tienes que rendirte ahora");
+
+}
+
+}
 
 
 
