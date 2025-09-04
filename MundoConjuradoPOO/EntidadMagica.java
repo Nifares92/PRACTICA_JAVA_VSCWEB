@@ -62,8 +62,15 @@ public void setaumentoenerrgia (int aumento){
 }
 
 
+//Lo que estamos creando en este caso es el METODO de la habilidad de SOMBRA.
+//Es decir, las sombras tienen la habilidad de cambiar el nombre de cualquier criatura a su antojo (menos a las brujas, que siempre son las brujas).
+//pARA ELLO UTILIZAREMOS ESTE SETTER, QUE LO QUE HARÁ SERÁ CAMBIAR EL NOMBRE DE LA ESPECIE POR OTRO QUE LE DIGAMOS.
+
+public void setcambiarNombre(String nuevoNombre) {
+   
+    this.nombre = nuevoNombre;
 }
 
-
+}
 
 

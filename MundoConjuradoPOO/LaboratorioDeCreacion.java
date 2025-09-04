@@ -10,7 +10,7 @@ EntidadMagica especie1=new EntidadMagica ("Gordon el bárbarisco", 456);
 EntidadMagica especie2=new EntidadMagica ("Pez de perrera", 334);
 Arcanofauno especie3=new Arcanofauno ("Crispin el persistente", 900, "B");
 Arcanofauno especie4=new Arcanofauno ("Dorioto", 700, "B");
-
+Sombra especie5=new Sombra("osdfkjhsadhfasdfahk", 1230, 300);
 
 System.out.println("Os presentamos a " + especie1.getNombre() + " y a " + especie2.getNombre() + ", dos especies conjuradas primigenias.");
 System.out.println("La primera de ellas tiene una energía vital de " + especie1.getEnergiaVital() + " y la segunda de ellas tiene una energía vital de " + especie2.getEnergiaVital());
@@ -39,26 +39,31 @@ System.out.println("Gordón el bárbarisco ha recibido un ataque de 200 y ahora 
 System.out.println("-------------------------------------------------------------------------");
 System.out.println("Pero, ¿qué ven mis lentes de cristales mágicos encantados de 4º generación?" + "\n Acaba de aparecer un arcanofauno de calificación SENO " + especie3.getclasificacionSENO() + " y de nombre " + especie3.getNombre());
 
+especie3.setCambiarenergia(734);
 
+System.out.println("Acaba de aumentar su energia en " + especie3.getEnergiaVital() + " y se dispone a atacar al pez de perrera");
 
+especie2.setataquerecibido(300);
 
+System.out.println("El pobre " + especie2.getNombre() + " está que no puede con él.");
+System.out.println("Su nueva energía vital es de " + especie2.getEnergiaVital());
 
+System.out.println("--------------------[[En otro lugar. el Registro especular de energias arcanas]]--------------");
+System.out.println("-Raúl, ¿qué tal las vaciones?, ¿qué tal ese crucero por pro el mar de las tinieblas en Transilvania" + "\n ¿Llegaste a conocer a Drácula?" + "\n -Pues la verdad es que no, pero me encontré con un arcanofauno de clasificación SENO " + especie4.getclasificacionSENO() + " que me dijo que te enviaba saludos. Se llama " + especie4.getNombre() + ".");
+System.out.println("!Anda!, !cuanto tiempo!");
 
+System.out.println("-Espera un momento, Raúl. ¿Has visto lo que aparecía ahí en el espejo especular cuarto?" + "\n -No, Astuco, ¿qué era?");
+System.out.println("Pues que " + especie1.getNombre() + " se está enfrentando a algo extraño, algo asi como una sombra, ¿verdad?");
+System.out.println("-Déjame que lo compruebe...");
+System.out.println("...........");
+System.out.println("...........");
+System.out.println("...........");
+System.out.println ("OH DIOS MIO, estamos hablando de una " + especie5.getNombre());
+System.out.println ("Todos sabemos que las sombras, y más concretamente las " + especie5.getNombre() + " disponen de una energía vital de " + especie5.getEnergiaVital() + ", algo que es muy superior a la media de criaturas concjuradas, e incluso arcanofaunos, como pueden ser " + especie3.getNombre() + " y " + especie4.getNombre());
 
+especie5.CambiodeNombre(especie3, "LolaLolita la cantaora");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+System.out.println("Oh nooooooo!!! " + especie5.getNombre() + " le ha cambiado el nombre, y ahora se llama " + especie3.getNombre());
 
 
 
