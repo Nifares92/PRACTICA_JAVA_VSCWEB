@@ -71,6 +71,15 @@ public void setcambiarNombre(String nuevoNombre) {
     this.nombre = nuevoNombre;
 }
 
+public String describir(){
+
+return ("Soy " + this.nombre + " y tengo de energía vital " + this.energiaVital);
+
+
+}
+
+
+
 }
 
 

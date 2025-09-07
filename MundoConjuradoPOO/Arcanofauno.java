@@ -28,7 +28,18 @@ return this.clasificacionSENO;
 
 }
 
+// La anotación @Override es una pista para Java. Le dice:
+// "Mi intención es sobrescribir un método de mi padre. Si me equivoco en el nombre
+// o los parámetros, avísame con un error". Es una buena práctica de seguridad.
+@Override
 
+public String describir() {
+    // Primero, llamamos al método 'describir' del padre para reutilizar la descripción base.
+    String descripcionPadre = super.describir();
+
+    // Y luego, le añadimos la información específica del Arcanofauno.
+    return descripcionPadre + " Además, soy un Arcanofauno de clasificación SENO: " + getclasificacionSENO() + ".";
+}
 
 }
 

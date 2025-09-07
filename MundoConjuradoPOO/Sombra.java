@@ -45,9 +45,16 @@ public void CambiodeNombre(EntidadMagica objetivo, String nuevoNombre){
 
         }
 
+public String describir(){
+String descripcionPadre= super.describir();
+
+return descripcionPadre + ("Además soy una sombra muy lista y encantadora.");
 
 
 }
+
+}
+
 
 
 
