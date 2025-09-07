@@ -41,16 +41,7 @@ package MundoConjuradoPOO;
 
 public void CambiodeNombre(EntidadMagica objetivo, String nuevoNombre){
 
-        if (this.Negrura>100){
-
                 objetivo.setcambiarNombre(nuevoNombre);
-
-                
-
-
-        }else {
-
-                System.out.println("No tienes suficiente energia para cambiar el nombre!");
 
         }
 
@@ -60,7 +51,7 @@ public void CambiodeNombre(EntidadMagica objetivo, String nuevoNombre){
 
 
 
-}
+
 
 
 
