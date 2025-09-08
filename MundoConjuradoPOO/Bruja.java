@@ -24,5 +24,10 @@ return descripcionPadre + ("Además soy un brujo con nivel de magia " + this.niv
 
 }
 
+public void realizarAccionEspecial(){
 
+System.out.println("Te voy a hacer un hechizo que te vas a cagar");
+
+
+}
 }

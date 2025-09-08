@@ -53,6 +53,14 @@ return descripcionPadre + ("Además soy una sombra muy lista y encantadora.");
 
 }
 
+public void realizarAccionEspecial(){
+
+System.out.println("Yo conocía a ese desombroso desde hacía años.");
+
+
+}
+
+
 }
 
 

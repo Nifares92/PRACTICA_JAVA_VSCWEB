@@ -72,6 +72,7 @@ especie6.setVaritacambiar("madera de roble");
 
 System.out.println("Mi varita es " + especie6.getVarita());
 
+especie1.realizarAccionEspecial();
 
 // Archivo: LaboratorioDeCreacion.java (al final del main)
 

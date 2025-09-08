@@ -1,6 +1,6 @@
 package MundoConjuradoPOO;
 
-public class EntidadMagica {
+public abstract class EntidadMagica {
 
     //ATRIBUTOS.
 private String nombre;
@@ -78,6 +78,10 @@ return ("Soy " + this.nombre + " y tengo de energía vital " + this.energiaVital
 
 }
 
+
+// Este método no tiene cuerpo {}, solo la declaración.
+// Obliga a todas las clases hijas a tener esta habilidad.
+public abstract void realizarAccionEspecial();
 
 
 }

@@ -41,6 +41,14 @@ public String describir() {
     return descripcionPadre + " Además, soy un Arcanofauno de clasificación SENO: " + getclasificacionSENO() + ".";
 }
 
+public void realizarAccionEspecial(){
+
+System.out.println("¿Alguien sabe qué hora es?");
+
+
+}
+
+
 }
 
 

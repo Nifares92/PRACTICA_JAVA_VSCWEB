@@ -39,6 +39,16 @@ System.out.println("Ese tipo de varitas no está permitido para magos de nivel b
 
 
 }
+
+public void realizarAccionEspecial(){
+
+System.out.println("¿Le falta mucho a la escopa para estar lista? Tengo un partido a las siete de la tarde y ya llego tarde.");
+
+
+}
+
+
+
 }
 
 
